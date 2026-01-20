@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="imagen_persona">        
+        <img src="image9.png">
+    </div>
+
+    <a href="#Sobre_mi">Sobre mi</a>
+    <a href="#Habilidades">Habilidades</a>
+    <a href="#Proyectos">Portafolio</a>
+
+    <button class="btn-wsp">CONTACTAME</button>
+</header>
+
+<main>
+
+<section class="principal">
+
+  <div class="texto_principal">
+
+    <h2 class="saludo_inicial">Hola, soy</h2>
+    <h1>Jeshua Iriarte Sánchez</h1>
+    <h3 class="Habilidad_mia">y soy Diseñador y Desarrollador Web</h3>
+
+    <div class="fila_boton_redes">
+
+        <button class="btn-wsp">CONTACTAME</button>
+
+        <div class="redes_al_costado">
+            <a href="https://www.instagram.com/jeshua_iriarte/" target="_blank">
+                <img src="image7.png" class="logo_ig" alt="logo de instagram">
+            </a>
+
+            <a href="https://wa.me/51973376311" target="_blank">
+                <img src="image8.png" class="logo_wspp" alt="logo de Whatsapp">
+            </a>
+            <a href="mailto:iriartejeshua@gmail.com" target="_blank">
+                <img src="image18.png" class="logo_linkedin" alt="logo de Linkedin">
+            </a>
+        </div>
+
+    </div>
+
+  </div>
+
+  </div> <div class="imagen_contenedor_wrapper">
+      <div class="circulo_decorativo circulo_rojo"></div>
+      <div class="circulo_decorativo circulo_blanco"></div>
+      <img src="image5.png" class="foto_mia">
+  </div>
+  </section>
+</section>
+
+    <section class="Sobre_mi" id="Sobre_mi">
+        <h2 class="titulo_1">Sobre</h2>
+        <h2 class="titulo_2">mi...</h2>
+
+        <div class="contenedor_bio">
+
+        <div class="informacion">
+        <p>
+            Soy diseñador y desarrollador web de Lima, Perú, con 17 años y más de dos años de experiencia en el mundo de la programación. 
+            Me especializo en la creación de páginas web modernas.  
+            Cuento con un nivel medio en inteligencia artificial, lo que me permite integrar soluciones inteligentes y automatización.  
+            Actualmente busco proyectos web donde pueda aportar valor real y ayudar a marcas o personas a establecer una presencia sólida en internet.
+        </p>
+        </div>
+
+        <div class="logos_bio">
+            <img class="logo_lenguajes" src="image11.png" alt="logo html y css">
+            <img class="logo_ai" src="image10.png" alt="logo inteligencia artificial">
+        </div>
+
+        </div>
+    </section>
+
+    <section class="Habilidades" id="Habilidades">
+        <h2 class="titulo_habilidades1">Mis</h2>
+        <h2 class="titulo_habilidades2">Habilidades</h2>
+
+    <div class="habilidad_contenedor">
+
+    <div class="habilidad_item">
+        <span class="porcentaje">50%</span>
+        <p class="habilidad_porcentaje">AI</p>
+    </div>
+
+    <div class="habilidad_item">
+        <span class="porcentaje">75%</span>
+        <p class="habilidad_porcentaje">HTML Y CSS</p>
+    </div>
+
+    <div class="habilidad_item">
+        <span class="porcentaje">30%</span>
+        <p class="habilidad_porcentaje">JAVASCRIPT</p>
+    </div>
+
+    <div class="habilidad_item">
+        <span class="porcentaje">40%</span>
+        <p class="habilidad_porcentaje">PYTHON</p>
+    </div>
+
+    </div>
+    </section>
+
+    <section class="Proyectos" id="Proyectos">
+
+        <div class="contenedor_gris_total">
+            <h2 class="titulo_proyectos1">Proyectos</h2>
+            <h2 class="titulo_proyectos2">Recientes</h2>
+
+        <div class="proyectos_contenedor">
+
+        <div class="proyecto_card">
+            <div class="img_container">
+                <img class="img_proy" src="image12.png" alt="pagina ferocia">
+            </div>
+            <a href="https://jeshua23-fo.github.io/FEROCIA./" target="_blank">
+            <img class="flecha_icono" src="image15.png" alt="flecha">
+            </a>
+        </div>
+
+        <div class="proyecto_card">
+            <div class="img_container">
+                <img class="img_proy" src="image14.png" alt="pagina helados">
+            </div>
+            <a href="https://jeshua23-fo.github.io/KawsayFruit/" target="_blank">
+            <img class="flecha_icono" src="image17.png" alt="flecha">
+            </a>
+        </div>
+
+        <div class="proyecto_card">
+            <div class="img_container">
+                <img class="img_proy" src="image16.png" alt="pagina terrenos">
+            </div>
+            <a href="https://www.figma.com/proto/8F1B4pNT4UdwDz1SyHFLjg/DEPORTES---MESSI--Community-?node-id=1-225" target="_blank">
+                <img class="flecha_icono" src="image13.png" alt="flecha">
+            </a>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+</main>
+
+<script>
+const mensaje = encodeURIComponent(
+  "Hola!, me gustaría ponerme en contacto contigo."
+);
+
+const numero = "51973376311";
+
+const urlWhatsApp = `https://wa.me/${numero}?text=${mensaje}`;
+
+document.querySelectorAll(".btn-wsp").forEach(boton => {
+  boton.addEventListener("click", function () {
+    window.open(urlWhatsApp, "_blank");
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,468 @@
+/* =========================
+   BASE
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #000000;
+    color: white;
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12%;
+    border-bottom: 1px solid #1A1F2F;
+    z-index: 1000;
+}
+
+.imagen_persona img{
+    width: 55px;
+    border-radius: 50%;
+}
+
+header a{
+    color: #D6D9E5;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+header button{
+    background: #C56A6A; 
+    color: #000000;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* =========================
+   SECCIÓN PRINCIPAL
+========================= */
+
+.principal{
+    min-height: 100vh;
+    padding: 120px 12% 0;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    background: black;
+}
+
+.principal .texto_principal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.saludo_inicial{
+    color: white;
+    font-size: 30px;
+}
+
+.principal h1{
+    font-size: 60px;
+    margin: 8px 0;
+    color: #C56A6A;
+    display: block; 
+}
+
+
+.Habilidad_mia{
+    color: white;
+    font-size: 22px;
+}
+
+
+.Boton_contactame{
+    margin-top: 20px;
+}
+
+.Boton_contactame button{
+    background: #C56A6A;
+    color: black;
+    border: 2px solid #C56A6A;
+    padding: 12px 30px;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-wsp{
+    background: #C56A6A;
+    color: black;
+    border: 2px solid #C56A6A;
+    padding: 12px 30px;
+    border-radius: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.fila_boton_redes{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+
+.redes_al_costado{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateY(2px);
+}
+
+.logo_ig,
+.logo_wspp{
+    width: 36px;
+}
+
+.imagen_contenedor_wrapper {
+    position: relative;
+    width: 500px;
+    justify-self: end;
+    height: 600px; 
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+    margin-top: -50px; 
+}
+
+.foto_mia {
+    width: auto !important;
+    height: 100% !important;
+    object-fit: contain;
+    position: relative;
+    z-index: 10;
+}
+
+.circulo_decorativo {
+    position: absolute;
+    border-radius: 50%;
+    width: 450px; 
+    height: 450px;
+}
+
+.circulo_rojo {
+    background-color: #C56A6A;
+    top: 0;
+    left: -20px;
+    z-index: 5; 
+}
+
+.circulo_blanco {
+    background-color: #FFFFFF;
+    bottom: 20px;
+    right: -20px;
+    z-index: 1; 
+}
+@media (max-width: 1100px) {
+    .principal {
+        grid-template-columns: 1fr; 
+        text-align: center;
+        padding-top: 150px;
+    }
+    .texto_principal {
+        align-items: center; 
+    }
+    .imagen_contenedor_wrapper {
+        justify-self: center; 
+        margin-top: 50px;
+        width: 400px; 
+        height: 500px;
+    }
+    .circulo_decorativo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+/* =========================
+   SOBRE MÍ
+========================= */
+.Sobre_mi {
+    padding: 120px 12% 70px 12%;
+    background: rgba(46, 46, 46, 0.3);
+}
+
+
+.Sobre_mi h2 {
+    display: inline-block; 
+    font-size: 60px;
+}
+
+.titulo_2 {
+    color: #C56A6A;
+    margin-left: 10px; 
+}
+
+.contenedor_bio {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 40px;
+}
+
+.informacion {
+    margin-bottom: 200px; 
+    flex: 1; 
+    max-width: 500px;
+    font-size: 25px;
+}
+
+.logos_bio {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+}
+
+.logo_lenguajes {
+    width: 500px; 
+    margin: 0;
+}
+
+.logo_ai {
+    width: 300px;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .contenedor_bio {
+        flex-direction: column;
+        text-align: center;
+    }
+    .Sobre_mi h2 {
+        display: block; 
+    }
+}
+
+/* =========================
+   HABILIDADES 
+========================= */
+.Habilidades {
+    padding: 120px 12%;
+    background: black;
+}
+
+
+.Habilidades h2 {
+    display: inline-block; 
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.titulo_habilidades2 {
+    color: #C56A6A;
+    margin-left: 10px; 
+}
+
+.habilidad_contenedor{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.porcentaje{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.habilidad_porcentaje{
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white; 
+}
+
+
+.habilidad_item::after{
+    content: "";
+    display: block;
+    height: 8px;
+    background: rgba(46, 46, 46, 0.3);
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+
+.habilidad_item:nth-child(1)::after{
+    background: linear-gradient(90deg, #C56A6A 50%, #2E2E2E 50%);
+}
+
+.habilidad_item:nth-child(2)::after{
+    background: linear-gradient(90deg, #C56A6A 75%, #2E2E2E 75%);
+}
+
+.habilidad_item:nth-child(3)::after{
+    background: linear-gradient(90deg, #C56A6A 30%, #2E2E2E 30%);
+}
+
+.habilidad_item:nth-child(4)::after{
+    background: linear-gradient(90deg, #C56A6A  40%, #2E2E2E 40%);
+}
+
+/* =========================
+   PROYECTOS
+========================= */
+.Proyectos {
+    padding: 120px 12%;
+    background: rgba(46, 46, 46, 0.3);
+}
+
+.Proyectos h2 {
+    display: inline-block; 
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.titulo_proyectos2 {
+    color: #C56A6A;
+    margin-left: 10px; 
+}
+
+.contenedor_gris_total {
+    background: #1A1A1A; 
+    border: 1px solid #333; 
+    padding: 60px 50px;
+    border-radius: 60px;
+}
+
+
+
+.proyectos_contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+.proyecto_card {
+    background: #3D2B2B; 
+    padding: 30px 20px;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    height: 400px; 
+}
+
+.img_container {
+    width: 100%;
+    height: 280px; 
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.img_proy {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+.flecha_icono {
+    width: 55px; 
+    height: auto;;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .proyectos_contenedor {
+        grid-template-columns: 1fr;
+    }
+    .proyecto_card {
+        height: auto;
+    }
+}
+
+/* =========================
+   ANIMACIONES SENCILLAS
+========================= */
+
+/* 1) Fade-in general al cargar */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.principal,
+.Sobre_mi,
+.Habilidades,
+.Proyectos {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* 2) Botones con leve escala al pasar el mouse */
+.Boton_contactame button,
+.btn-wsp,
+header button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Boton_contactame button:hover,
+.btn-wsp:hover,
+header button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(197,106,106,0.6);
+}
+
+/* 3) Imagen flotante suave */
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.foto_mia {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 4) Tarjetas de proyectos con elevación */
+.proyecto_card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* 5) Barras de habilidades con aparición progresiva */
+@keyframes growBar {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+.habilidad_item::after {
+  animation: growBar 1.2s ease forwards;
+}
